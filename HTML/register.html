@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+
+    <!-- NAVBAR STYLESHEET -->
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <!-- HOME STYLESHEET -->
+    <link rel="stylesheet" href="../CSS/register.css" />
+
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <span class="logo">SPORTS CLUB</span>
+
+      <ul class="nav-items">
+        <li><a href="../HTML/home.html" class="nav-item">Home</a></li>
+        <li><a href="../HTML/sports.html" class="nav-item">Sports</a></li>
+        <li><a href="events.html" class="nav-item">Events</a></li>
+        <li><a href="" class="nav-item">About Us</a></li>
+        <li class="">
+          <a href="../HTML/register.html" class="btn">Register Now</a>
+        </li>
+      </ul>
+    </header>
+    <article class="register">
+      <div class="registeration-layout">
+        <form action="../PHP/register.php" method="POST">
+          <h1>Registration</h1>
+          <!-- FIRST SECTION -->
+          <h2>Personal Details</h2>
+          <!-- FIRST ROW -->
+          <div class="row">
+            <div class="input-field">
+              <h3>Full Name</h3>
+              <input type="text" placeholder="Enter your name" name="name" />
+            </div>
+            <div class="input-field">
+              <h3>Date Of Birth</h3>
+              <input type="date" / name="date_of_birth">
+            </div>
+            <div class="input-field">
+              <h3>Email</h3>
+              <input type="email" placeholder="Enter your email" name="email" />
+            </div>
+          </div>
+          <!-- SECOND ROW -->
+          <div class="row">
+            <div class="input-field">
+              <h3>Mobile Number</h3>
+              <input
+                type="tel"
+                placeholder="Enter mobile number"
+                name="mobile_number"
+              />
+            </div>
+            <div class="input-field">
+              <h3>Gender</h3>
+              <input
+                type="text"
+                placeholder="Enter your gender"
+                name="gender"
+              />
+            </div>
+            <div class="input-field">
+              <h3>Password</h3>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="password"
+              />
+            </div>
+          </div>
+          <!-- SECOND SECTION -->
+          <h2>Membership Details</h2>
+          <!-- FIRST ROW -->
+          <div class="row">
+            <div class="input-field">
+              <h3>Sport</h3>
+              <input
+                type="text"
+                placeholder="Enter Sport Name/Event"
+                name="sport"
+              />
+            </div>
+            <div class="input-field">
+              <h3>Issued Date</h3>
+              <input type="date" name="issued_date" />
+            </div>
+            <div class="input-field">
+              <h3>Expiry Date</h3>
+              <input type="date" name="expiry_date" />
+            </div>
+          </div>
+          <!-- SECOND ROW -->
+          <div class="row">
+            <div class="input-field">
+              <h3>Payment-Card Name</h3>
+              <input
+                type="tel"
+                placeholder="Enter card name"
+                name="payment_card_name"
+              />
+            </div>
+            <div class="input-field">
+              <h3>Payment-Card Number</h3>
+              <input
+                type="number"
+                placeholder="Enter your card number"
+                name="payment_card_number"
+              />
+            </div>
+            <div class="input-field">
+              <h3>Payment-Card CSV</h3>
+              <input
+                type="number"
+                placeholder="Enter your CSV"
+                name="payment_card_csv"
+              />
+            </div>
+          </div>
+          <div class="btn-row">
+            <button class="form-btn">SUBMIT</button>
+            <a href="login.html" class="form-btn">LOG IN</a>
+          </div>
+        </form>
+      </div>
+    </article>
+
+    <script type="text/javascript" src="../JS/script.js"></script>
+  </body>
+</html>
